@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//PT" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml">
+	<head>
+	
+		<title>AS3 Facebook Tutorial</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="language" content="pt" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		
+		<script type="text/javascript" src="http://connect.facebook.net/en_US/all.js"></script>		
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+		
+		
+		<script type="text/javascript">
+		
+			var APP_ID = "494499000696323";			
+			var REDIRECT_URI = "http://localhost/fbTutorial";		
+									
+			var PERMS = "publish_stream, user_photos, user_birthday, user_hometown, user_education_history, read_stream, user_about_me"; //comma separated list of extended permissions
+			
+				var flashvars = {
+				};
+				
+				var params = {
+					menu: "false",
+					scale: "exactFit",
+					allowFullscreen: "true",
+					allowScriptAccess: "always",
+					bgcolor: "#516cb2",
+					quality: "best"
+				};
+				
+				var attributes = {
+					id:"AS3Tutorial",
+					name:"AS3Tutorial"
+				};
+				
+					$('#ConnectPage').append('<h1>A versão 9 do flash é necessária para visualizar esta página.</h1><p><a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" /></a></p>');		
+					// Note we are passing in attribute object with a 'name' property that is same value as the 'id'. This is REQUIRED for Chrome/Mozilla browsers
+					swfobject.embedSWF("flashWebExample.swf", "ConnectPage", "1280", "600", "9", "expressInstall.swf", flashvars, params, attributes);
+					
+			 
+			</script>
+
+	</head>
+	<body>
+			<!-- required div tag -->
+			<center>
+				<div id="fb-root"></div>
+						
+				<div id="ConnectPage">
+					<h1>AS3 Facebook Tutorial</h1>
+					<p>A carregar...</p>
+					<p><a href="http://www.adobe.com/go/getflashplayer"><img
+						src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif"
+						alt="Get Adobe Flash player" /></a></p>
+				</div>
+			</center>
+		</div>
+	</body>
+</html>

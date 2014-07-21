@@ -7,6 +7,6 @@ Trabalho realizado para fins académicos da cadeira de Programação III do curs
 
 Projecto realizado por Frederico Marta e Nuno Martins.
 
-Fontes:
+Fontes:<br>
 http://www.developers.facebook.com<br>
 http://www.adobe.com/devnet/games/articles/getting-started-with-facebooksdk-actionscript3.html
